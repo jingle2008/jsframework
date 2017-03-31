@@ -8,20 +8,20 @@ import ModalExample from '../modal-example';
 import { APP_NAME } from '../../config';
 
 const styles = {
-  hoverMe: {
-    '&:hover': {
-      color: 'red',
+    hoverMe: {
+        '&:hover': {
+            color: 'red',
+        },
     },
-  },
-  '@media (max-width: 800px)': {
-    resizeMe: {
-      color: 'red',
+    '@media (max-width: 800px)': {
+        resizeMe: {
+            color: 'red',
+        },
     },
-  },
-  specialButton: {
-    composes: ['btn', 'btn-primary'],
-    backgroundColor: 'limegreen',
-  },
+    specialButton: {
+        composes: ['btn', 'btn-primary'],
+        backgroundColor: 'limegreen',
+    },
 };
 
 const HomePage = ({ classes }: { classes: Object }) =>

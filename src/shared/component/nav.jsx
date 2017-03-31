@@ -12,8 +12,8 @@ import {
 } from '../routes';
 
 const handleNavLinkClick = () => {
-  $('body').scrollTop(0);
-  $('.js-navbar-collapse').collapse('hide');
+    $('body').scrollTop(0);
+    $('.js-navbar-collapse').collapse('hide');
 };
 
 const Nav = () =>
