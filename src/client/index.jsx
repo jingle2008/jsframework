@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import { BrowserRouter } from 'react-router-dom';
+import setUpSocket from './socket';
 
 import App from '../shared/app';
 import helloReducer from '../shared/reducer/hello';
@@ -45,3 +46,5 @@ if (module.hot) {
         ReactDOM.render(wrapApp(NextApp, store), rootEl);
     });
 }
+
+setUpSocket(store);

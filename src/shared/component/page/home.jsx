@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 
 import { APP_NAME } from '../../config';
 
-const HomePage = () => 
+const HomePage = () =>
   <div>
     <Helmet
       meta={[
